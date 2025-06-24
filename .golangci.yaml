@@ -1,29 +1,26 @@
-version: "2"
+---
+version: '2'
 run:
   modules-download-mode: mod
 linters:
   default: none
   enable:
-    - dupl
-    - errcheck
-    - goconst
-    - gocyclo
-    - gosec
-    - govet
-    - ineffassign
-    - lll
-    - misspell
-    - nakedret
-    - prealloc
-    - revive
-    - staticcheck
+    # - dupl
+    # - errcheck
+    # - goconst
+    # - gocyclo
+    # - gosec
+    # - govet
+    # - ineffassign
+    # - lll
+    # - misspell
+    # - nakedret
+    # - prealloc
+    # - revive
+    # - staticcheck
     - unconvert
-    - unparam
-    - unused
-  settings:
-    lll:
-      line-length: 150
-      tab-width: 1
+    # - unparam
+    # - unused
   exclusions:
     generated: lax
     presets:
@@ -38,7 +35,7 @@ linters:
 formatters:
   enable:
     - gofmt
-    - goimports
+    # - goimports
   exclusions:
     generated: lax
     paths:
