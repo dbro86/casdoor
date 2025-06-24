@@ -28,7 +28,7 @@ jobs:
           pull_request_title: 'refactor: New Crowdin translations'
 
           crowdin_branch_name: l10n_branch
-          config: ./web/crowdin.yml
+          config: ./web/crowdin.yaml
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -49,7 +49,7 @@ jobs:
           pull_request_title: 'refactor: New Crowdin Backend translations'
 
           crowdin_branch_name: l10n_branch
-          config: './crowdin.yml'
+          config: ./crowdin.yaml
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
